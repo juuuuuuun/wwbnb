@@ -1,0 +1,122 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 80px 80px 80px;
+}
+
+.card {
+  flex: 1;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px grey;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 4px 4px 10px grey;
+}
+
+.card .img {
+  border-radius: 1rem 1rem 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 80%;
+}
+
+.card .description .title {
+  color: var(--reverse-color);
+  font-weight: 800;
+}
+
+.card .description .desc {
+  color: var(--second-color);
+  font-size: 0.8rem;
+}
+
+.description {
+  padding: 15px;
+}
+
+.info_section {
+  margin-bottom: 1rem;
+}
+
+.info_section > .desc button:hover {
+  background-color: var(--main-color);
+  color: var(--accent-color);
+}
+
+.info_section > .desc {
+  color: var(--reverse-color);
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 90px 10px 90px;
+}
+
+.experience_cards {
+  padding: 20px 80px 10px 80px;
+  background-color: var(--reverse-color);
+  display: flex;
+}
+
+.cardList {
+  padding-bottom: 80px;
+}
+
+.experience_cards > .desc {
+  margin: 10px;
+}
+
+.experience_cards .card {
+  background-color: #222222;
+}
+
+.explore_btn {
+  border-width: 1px;
+  background-color: var(--reverse-color);
+  color: var(--main-color);
+  border-color: var(--main-color);
+  align-self: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.explore_btn:hover {
+  background-color: var(--accent-color);
+  border-width: 1px;
+  border-color: var(--accent-color);
+  padding: 0.5rem;
+  color: var(--main-color);
+  padding: 0.5rem;
+  align-self: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+.sub_cards {
+  flex-basis: 45%;
+}
+
+.above_cards {
+  display: flex;
+}
+
+.bottom_card .img {
+  padding-top: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-container {
+    display: block;
+    margin: 20px 80px 80px 80px;
+  }
+  .experience_cards {
+    display: block;
+  }
+  .above_cards {
+    display: block;
+  }
+}

@@ -1,0 +1,84 @@
+<!-- 
+  Name: Jun Song
+Seneca ID Number : 141973198
+Date: 2020-10-25
+Purpose: approve for submitting WEB322 Assignment2
+ -->
+<nav>
+    <div class="main-item" id="logo" onclick="location.href='/';">
+        <i class="fas fa-door-open"></i>
+        WWBnB
+    </div>
+    <div class="menuBar"><i class="fas fa-bars"></i></div>
+    <div class="main-item closable">
+        <div class="sub-item"><a href="/room">Places to stay</a></div>
+        <div class="sub-item"><a href="/aboutUs">About Us</a></div>
+        <div class="sub-item"><a href="#">Monthly Promotion</a></div>
+    </div>
+    <div class="main-item closable2">
+        {{#if session.user}}
+        <div class="sub-item"><a href="#">Become a host</a></div>
+        {{!-- <div class="sub-item">
+            <div class="item icons languageSelect">
+                <i class="fas fa-globe"></i>
+            </div>
+            <div class="item icons">
+                <i class="fas fa-angle-down"></i>
+            </div>
+        </div> --}}
+        {{username}}
+        <form action="/logout" method="get">
+            <div class="item icons">
+                <button class="logout-btn">Logout</button>
+            </div>
+        </form>
+        {{else}}
+        <div class="sub-item logIn-Form">
+            <div class="item icons">
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+        {{/if}}
+    </div>
+</nav>
+<form action="/room" id="search" class="search-form" method="get">
+    <div class="input-container">
+        <label for="location">Location</label>
+        <input list="cities" type="text" placeholder="Where are you going?" />
+        <datalist id="cities">
+            <option value="Toronto"></option>
+            <option value="Niagara"></option>
+            <option value="Kingston"></option>
+            <option value="Vancouver"></option>
+            <option value="Montreal"></option>
+        </datalist>
+    </div>
+    <div class="input-container datetime">
+        <label for="check_in">Check in</label>
+        <input type="datetime-local" class="checkIn" />
+    </div>
+    <div class="input-container datetime">
+        <label for="check_out">Check out</label>
+        <input type="datetime-local" class="checkOut" />
+    </div>
+    <div class="input-container">
+        <label for="guests">Guests</label>
+        <div class="guestList">
+            <input type="text" placeholder="Add guests" />
+            <select aria-label="type_guest">
+                <option>Adults</option>
+                <option>Children</option>
+                <option>Infants</option>
+            </select>
+        </div>
+    </div>
+    <button type="submit"><i class="fas fa-search"></i></button>
+</form>
+<div class="main-title">
+    <h1>Never stopped going</h1>
+    <p>Settle in somewhere new. Discover friendly place for</p>
+    <p>staying to live, work, or just for relaxing.</p>
+    <button class="explore">
+        <a href="/room">Explore nearby</a>
+    </button>
+</div>

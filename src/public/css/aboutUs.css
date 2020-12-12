@@ -1,0 +1,36 @@
+:root {
+  --main-color: white;
+  --reverse-color: black;
+  --accent-color: #ff385c;
+  --second-color: #717171;
+  --border-color: #c5b7c0;
+  --form-color: #169ee2;
+}
+
+.main-item:nth-child(2) .sub-item:nth-child(2) a {
+  color: var(--accent-color);
+}
+
+.card .img {
+  padding-top: 100%;
+  border-radius: 1rem;
+}
+
+.info_section .desc {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.info_section {
+  margin-bottom: 10rem;
+}
+
+.card-container {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.card {
+  cursor: auto;
+}

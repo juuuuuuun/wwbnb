@@ -1,0 +1,89 @@
+<!-- 
+  Name: Jun Song
+Seneca ID Number : 141973198
+Date: 2020-10-25
+Purpose: approve for submitting WEB322 Assignment2
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/logo.ico">
+  <title>Stays with WWBnB</title>
+  <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    /> -->
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <script src="/js/index.js" defer></script>
+  <script src="https://kit.fontawesome.com/a3fe2e3e5e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  {{#isEqual message "success"}}
+  <script>
+    alert(`Welcome to WWBnB, ${"{{username}}"}`);
+  </script>
+  {{/isEqual}}
+  <div class="overlay">
+    {{> sign_login}}
+  </div>
+  <header>
+    {{> header}}
+  </header>
+  <main>
+    <div class="info_section">
+      <div class="desc">
+        <div class="text">
+          <h1>Dashboard - Welcome to WWBnB, {{username}}</h1>
+        </div>
+        <button class="explore_btn aboutUs" onclick="location.href='/aboutUs';">
+          Explore more
+        </button>
+      </div>
+      <div class="card-container">
+        <div class="card" onclick="location.href='/aboutUs';">
+          <div class="img" style="
+                background-image: url('https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1046&q=80');
+              "></div>
+          <div class="description">
+            <div class="title">Unique stays</div>
+            <div class="desc">
+              Spaces that are more than just a place to sleep.
+            </div>
+          </div>
+        </div>
+        <div class="card" onclick="location.href='/aboutUs';">
+          <div class="img" style="
+                background-image: url('https://images.unsplash.com/photo-1583133269972-ebffbbe115b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+              "></div>
+          <div class="description">
+            <div class="title">Online Experiences</div>
+            <div class="desc">A new way to travel from home.</div>
+          </div>
+        </div>
+        <div class="card" onclick="location.href='/aboutUs';">
+          <div class="img" style="
+                background-image: url('https://images.unsplash.com/photo-1535827841776-24afc1e255ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+              "></div>
+          <div class="description">
+            <div class="title">Entire homes</div>
+            <div class="desc">
+              Comfortable private places, with room for friends or family.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <div class="line"></div>
+  <footer>
+  </footer>
+</body>
+
+</html>

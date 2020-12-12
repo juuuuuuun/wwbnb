@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Righteous&family=Roboto+Mono:wght@400&display=swap');
+@import './reset.css';
+@import './index.html/index-userForm.css';
+@import './index.html/index-searchForm.css';
+@import './index.html/index-cardContainer.css';
+
+:root {
+  --main-color: white;
+  --reverse-color: black;
+  --accent-color: #ff385c;
+  --second-color: #717171;
+  --border-color: #c5b7c0;
+  --form-color: #169ee2;
+}
+
+body {
+  color: var(--main-color);
+  width: 100vw;
+  font-family: 'Handlee', cursive;
+  overflow-x: hidden;
+}
+
+.error {
+  position: absolute;
+  color: var(--accent-color);
+  right: 7rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Righteous', cursive;
+}
+
+#logo:hover {
+  cursor: pointer;
+}
+
+#logo svg {
+  padding-right: 0.3rem;
+}
+
+header {
+  background-image: url('https://images.unsplash.com/photo-1540882082344-a56ecd70ba96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav .main-item .sub-item a:hover {
+  color: var(--accent-color);
+}
+
+header nav .main-item .sub-item:hover {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.logout-btn {
+  background: transparent;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+.menuBar {
+  display: none;
+}
+
+.main-item {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.sub-item {
+  display: flex;
+}
+
+.main-item a,
+.sub-item i {
+  padding: 20px;
+}
+
+.sub-item .icons i {
+  padding: 10px 5px 10px 5px;
+}
+
+.main-title {
+  align-self: start;
+  margin: 5rem 3rem 10rem 90px;
+}
+
+.explore {
+  background-color: var(--main-color);
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 0;
+  margin-top: 1rem;
+}
+
+.explore a {
+  color: var(--reverse-color);
+}
+
+.explore a:hover {
+  color: var(--main-color);
+}
+
+.explore:hover {
+  background-color: var(--accent-color);
+  border: 0;
+  padding: 0.5rem;
+
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 0;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+footer {
+  color: var(--reverse-color);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 40px 90px;
+  height: 12vh;
+}
+
+footer .item a {
+  color: var(--base-color);
+}
+
+footer .item > a {
+  text-decoration: none;
+}
+
+footer .icons > a {
+  margin: 1rem;
+}
+
+footer .item > a:hover {
+  color: var(--accent-color);
+  transition: color 0.5s ease;
+}
+
+footer form input {
+  border: 0;
+  border-bottom: 1px solid var(--reverse-color);
+  padding: 0 0 8px 3px;
+  outline: none;
+  background-color: #f7f7f7;
+}
+
+footer form button {
+  background-color: var(--accent-color);
+  border: 0;
+  padding: 0.5rem;
+  color: var(--main-color);
+  border: 1px solid var(--accent-color);
+}
+
+footer form button:hover {
+  background-color: var(--main-color);
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  #logo {
+    text-align: center;
+  }
+
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .menuBar {
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgba(247, 247, 247, 0.3);
+  }
+
+  .menuBar:hover {
+    background-color: rgba(247, 247, 247, 0.2);
+  }
+
+  .menuBar:active {
+    background-color: rgba(247, 247, 247, 0.1);
+  }
+
+  .menuBar i {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-item:first-child {
+    padding: 20px;
+  }
+
+  .main-item:not(:first-child) .sub-item:hover {
+    background-color: rgb(255, 255, 255, 30%);
+  }
+
+  div.main-item {
+    display: block;
+    padding: 0;
+  }
+
+  .main-item a {
+    padding: 0;
+  }
+
+  .main-item > .sub-item {
+    padding: 10px 0 10px 0;
+    justify-content: center;
+  }
+
+  div.closable {
+    padding: 0;
+    display: none;
+    background-color: rgba(247, 247, 247, 0.3);
+  }
+
+  div.closable2 {
+    padding: 0;
+    display: none;
+    background-color: rgba(247, 247, 247, 0.3);
+  }
+
+  .main-item:last-child .sub-item:not(:first-child) {
+    padding: 0;
+    height: 41px;
+  }
+
+  footer {
+    display: block;
+    height: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  footer form input {
+    padding: 0 0 8px 0;
+  }
+
+  footer form input,
+  footer form button {
+    width: 100%;
+    margin-top: 0.3rem;
+  }
+
+  footer > .icons {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer > div,
+  footer > form {
+    margin: 1rem;
+  }
+  .main-title {
+    align-self: none;
+    margin: 0 auto;
+    padding: 5rem 2rem 10rem 2rem;
+  }
+}

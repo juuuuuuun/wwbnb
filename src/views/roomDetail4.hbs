@@ -1,0 +1,125 @@
+<!-- 
+  Name: Jun Song
+Seneca ID Number : 141973198
+Date: 2020-10-25
+Purpose: approve for submitting WEB322 Assignment2
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/logo.ico">
+    <title>About WWBnB's room</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/booking.css" />
+    <link rel="stylesheet" href="/css/roomDetail.css" />
+    <script src="/js/index.js" defer></script>
+    <script src="/js/room.js" defer></script>
+    <script src="https://kit.fontawesome.com/a3fe2e3e5e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="overlay">
+        {{> sign_login}}
+    </div>
+    <header>
+        {{> header}}
+    </header>
+    <main>
+        <section class="listing">
+            <h1 class="title">Family Guest house!</h1>
+            <div class="detail_content">
+                <div class="gallery">
+                    <div class="main images"
+                        style="background-image: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80')">
+                    </div>
+                    <div class="sub images"
+                        style="background-image: url('https://images.unsplash.com/photo-1552558636-f6a8f071c2b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80')">
+                    </div>
+                    <div class="sub images"
+                        style="background-image: url('https://images.unsplash.com/photo-1507089947368-19c1da9775ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80')">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="rateInfo">
+                        <div class="review">
+                            <i class="fas fa-star"></i><span>3.87</span><span>(17)</span>
+                            <i class="fas fa-certificate"></i><span>Superhost</span>
+                            <p>location</p>
+                            <div class="currency">$80CAD/peron & night</div>
+                        </div>
+                        <div class="desc">
+                            <hr>
+                            <div class="headTitle">Family Guest house!</div>
+                            <div class="detail">Enjoy a comfortable stay in a private room in the heart of wine country.
+                                Many private aspects such as private driveway, entry, and bathroom with shower for your
+                                ease. You will have access to the family room with the tv, as well as our games room.
+                            </div>
+                            <hr>
+                            <div class="amenity">Amenities</div>
+                            <div class="detail">
+                                <i class="fas fa-fire"></i>
+                                Indoor fireplace
+                                <br>
+                                <i class="fas fa-tshirt"></i>
+                                Hangers
+                                <br>
+                                <i class="fas fa-play"></i>
+                                Pack ’n Play/travel crib
+                                <br>
+                                <i class="fas fa-parking"></i>
+                                Free parking on premises
+                                <br>
+                                <i class="fas fa-wifi"></i>
+                                Wifi
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking">
+                        <form class="user-form">
+                            <!-- action="/aboutUs" method="get"-->
+                            <div class="head">
+                                <p>Book Now</p>
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <hr>
+                            <div class="input checkIn">
+                                <p>Check-In</p>
+                                <input required type="datetime-local" id="date-in" />
+                            </div>
+                            <div class="input checkOut">
+                                <p>Check-Out</p>
+                                <input required type="datetime-local" id="date-out" />
+                            </div>
+                            <div class="input checkOut">
+                                <p>Number of Guests</p>
+                                <input type="number" id="quantity" name="quantity" value="0">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="input">
+                                <div class="head">
+                                    <p>Total</p>
+                                </div>
+                                <p>$CAD</p>
+                            </div>
+                            <div class="reserve">
+                                <input type="submit" id="reserve" value="Reserve Now" />
+                            </div>
+                            <div class="reset">
+                                <input type="reset" id="reset" value="Reset" />
+                            </div>
+                            <br />
+                        </form>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <hr class="line">
+    </hr>
+    <footer>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!-- 
+  Name: Jun Song
+Seneca ID Number : 141973198
+Date: 2020-10-25
+Purpose: approve for submitting WEB322 Assignment2
+ -->
+<form class="user-form log-in" action="/login" method="post">
+    <!-- action="/aboutUs" method="get"-->
+    <div class="title">
+        <div class="form-title">
+            <p>Log in</p>
+        </div>
+        <i class="fas fa-times"></i>
+    </div>
+    <div class="border"></div>
+    <div class="input-container">
+        <input type="text" name="email" id="emailLogin" placeholder="Username" />
+        <i class="far fa-envelope"></i>
+        <div class="error">{{messages.email}}</div>
+    </div>
+    <div class="input-container">
+        <input type="password" name="password" id="passwordLogin" placeholder="Password" />
+        <i class="fas fa-lock"></i>
+        <div class="error">{{messages.password}}</div>
+    </div>
+
+    <div class="input-container sign-up">
+        <input type="submit" name="submit" id="submitLogin" value="Log in" />
+    </div>
+    <div class="input-container sign-up">
+        <input type="reset" id="resetLogin" value="Reset" />
+    </div>
+    <a class="findPw"
+        href="https://www.WWBnB.ca/rooms/39981203?adults=1&check_in=2020-10-12&check_out=2020-10-15&source_impression_id=p3_1602289368_TJdwirxiN8oVAZ5D">
+        Forgot password?
+    </a>
+    <br />
+    <a href="#" class="signUp_btn">Sign up</a>
+</form>
+
+<form class="user-form sign-up" action="/" method="POST" enctype="application/x-www-form-urlencoded">
+    <!-- action="/aboutUs" method="get"-->
+    <div class="title">
+        <div class="form-title">
+            <p>Sign up</p>
+        </div>
+        <i class="fas fa-times"></i>
+    </div>
+    <div class="border"></div>
+    <div class="input-container">
+        <input type="text" name="email" id="email_signUp" placeholder="Email address" />
+        <i class="far fa-envelope"></i>
+        <div class="error">{{messages.email}}</div>
+    </div>
+    <p>We'll email you trip confirmations and receipts.</p>
+    <div class="input-container">
+        <input type="text" name="firstname" id="fName" placeholder="First name" />
+        <i class="far fa-user"></i>
+        <div class="error">{{messages.fName}}</div>
+    </div>
+    <div class="input-container">
+        <input type="text" name="lastname" id="lName" placeholder="Last name" />
+        <i class="far fa-user"></i>
+        <div class="error">{{messages.lName}}</div>
+    </div>
+    <p>Make sure it matches the name on your government ID.</p>
+    <div class="input-container">
+        <input type="date" name="birthdate" id="birth" placeholder="Birth date" />
+        <div class="error">{{messages.birthDate}}</div>
+    </div>
+    <p>
+        To sign up, you need to be at least 18. Your birthday won’t be shared
+        with other people who use WWBnB.
+    </p>
+    <div class="input-container">
+        <input type="password" name="password" id="passwordSignUp" placeholder="Create a Password" />
+        <i class="fas fa-lock"></i>
+        <div class="error">{{messages.password}}</div>
+    </div>
+    <label for="isAdmin" style="color: black;">Is Admin?</label>
+    <input type="checkbox" name="isAdmin" id="isAdmin" />
+    <p class="agreement" style="margin-top: 1rem">
+        By selecting Agree and continue below, I agree to WWBnB’s
+        <a href="https://www.WWBnB.ca/terms?source=tos">Terms of Service</a>,
+        <a href="https://www.WWBnB.ca/terms?source=tos">Payments Terms of Service</a>,
+        <a href="https://www.WWBnB.ca/terms?source=tos">Privacy Policy</a>,
+        and
+        <a href="https://www.WWBnB.ca/terms?source=tos">Nondiscrimination Policy</a>.
+    </p>
+    <div class="input-container sign-up">
+        <input type="submit" name="submit" id="submitSignUp" value="Agree and continue" />
+    </div>
+    <div class="input-container sign-up">
+        <input type="reset" id="resetSignUp" value="Reset" />
+    </div>
+    <a href="#" class="logIn_btn">Log in</a>
+</form>

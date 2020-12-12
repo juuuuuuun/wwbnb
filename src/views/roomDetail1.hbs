@@ -1,0 +1,128 @@
+<!-- 
+  Name: Jun Song
+Seneca ID Number : 141973198
+Date: 2020-10-25
+Purpose: approve for submitting WEB322 Assignment2
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/logo.ico">
+    <title>About WWBnB's room</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/booking.css" />
+    <link rel="stylesheet" href="/css/roomDetail.css" />
+    <script src="/js/index.js" defer></script>
+    <script src="/js/room.js" defer></script>
+    <script src="https://kit.fontawesome.com/a3fe2e3e5e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="overlay">
+        {{> sign_login}}
+    </div>
+    <header>
+        {{> header}}
+    </header>
+    <main>
+        <section class="listing">
+            <h1 class="title">Beautiful house·Komoka</h1>
+            <div class="detail_content">
+                <div class="gallery">
+                    <div class="main images"
+                        style="background-image: url('https://images.unsplash.com/photo-1555426104-3a03a4e70b1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=892&q=80')">
+                    </div>
+                    <div class="sub images"
+                        style="background-image: url('https://images.unsplash.com/photo-1595599512948-b9831e5fc11c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80')">
+                    </div>
+                    <div class="sub images"
+                        style="background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=867&q=80')">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="rateInfo">
+                        <div class="review">
+                            <i class="fas fa-star"></i><span>4.95</span><span>(77)</span>
+                            <i class="fas fa-certificate"></i><span>Superhost</span>
+                            <p>location</p>
+                            <div class="currency">$300CAD/peron & night</div>
+                        </div>
+                        <div class="desc">
+                            <hr>
+                            <div class="headTitle">Entire condominium hosted by Hosting Blue</div>
+                            <div class="detail">We are committed to providing safe and comfortable spaces for our
+                                guests. In light of recent events, our team has been retrained based on the CDC and WHO
+                                best practices for keeping our accommodations clean and safe during these challenging
+                                times.
+
+                                Private exterior entrance and coin operated laundry facility located onsite at North
+                                Creek.</div>
+                            <hr>
+                            <div class="amenity">Amenities</div>
+                            <div class="detail">
+                                <i class="fas fa-fire"></i>
+                                Indoor fireplace
+                                <br>
+                                <i class="fas fa-tshirt"></i>
+                                Hangers
+                                <br>
+                                <i class="fas fa-play"></i>
+                                Pack ’n Play/travel crib
+                                <br>
+                                <i class="fas fa-parking"></i>
+                                Free parking on premises
+                                <br>
+                                <i class="fas fa-wifi"></i>
+                                Wifi
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking">
+                        <form class="user-form">
+                            <!-- action="/aboutUs" method="get"-->
+                            <div class="head">
+                                <p>Book Now</p>
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <hr>
+                            <div class="input checkIn">
+                                <p>Check-In</p>
+                                <input required type="datetime-local" id="date-in" />
+                            </div>
+                            <div class="input checkOut">
+                                <p>Check-Out</p>
+                                <input required type="datetime-local" id="date-out" />
+                            </div>
+                            <div class="input checkOut">
+                                <p>Number of Guests</p>
+                                <input type="number" id="quantity" name="quantity" value="0">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="input">
+                                <div class="head">
+                                    <p>Total</p>
+                                </div>
+                                <p>$CAD</p>
+                            </div>
+                            <div class="reserve">
+                                <input type="submit" id="reserve" value="Reserve Now" />
+                            </div>
+                            <div class="reset">
+                                <input type="reset" id="reset" value="Reset" />
+                            </div>
+                            <br />
+                        </form>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <hr class="line">
+    </hr>
+    <footer>
+    </footer>
+</body>
+
+</html>

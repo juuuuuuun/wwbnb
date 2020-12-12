@@ -1,0 +1,102 @@
+:root {
+  --main-color: white;
+  --reverse-color: black;
+  --accent-color: #ff385c;
+  --second-color: #717171;
+  --border-color: #c5b7c0;
+  --form-color: #169ee2;
+}
+
+.search-form {
+  margin-bottom: 6.5rem;
+}
+
+.booking {
+  margin: 0.5rem;
+}
+
+.booking div.input,
+div.checkOut > input {
+  width: auto;
+}
+
+main {
+  color: var(--reverse-color);
+  padding: 2rem 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.desc {
+  margin-top: 1rem;
+}
+
+.desc .headTitle {
+  font-weight: 800;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.desc .detail {
+  margin-bottom: 1rem;
+}
+
+.desc .amenity {
+  margin-top: 0.5rem;
+  font-weight: 800;
+  font-size: 1.5rem;
+  opacity: 80%;
+}
+
+.review i {
+  color: var(--accent-color);
+}
+
+.review i:nth-child(4) {
+  margin-left: 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.gallery .images {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0.5rem 0.5rem 60% 0.5rem;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+
+.gallery .main {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.rateInfo {
+  margin: 0.5rem;
+}
+
+.content {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+
+@media only screen and (max-width: 768px) {
+  div.content {
+    display: block;
+  }
+}

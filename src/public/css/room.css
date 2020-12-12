@@ -1,0 +1,91 @@
+:root {
+  --main-color: white;
+  --reverse-color: black;
+  --accent-color: #ff385c;
+  --second-color: #717171;
+  --border-color: #c5b7c0;
+  --form-color: #169ee2;
+}
+
+.search-form {
+  margin-bottom: 6.5rem;
+}
+
+main {
+  color: var(--reverse-color);
+  padding: 2rem 3rem;
+}
+
+.main-item:nth-child(2) .sub-item:first-child a {
+  color: var(--accent-color);
+}
+
+.listing .title {
+  font-weight: 1000;
+}
+
+.filters {
+  margin: 1rem 0;
+}
+
+.filters .item {
+  background-color: transparent;
+  border-radius: 2rem;
+  border: 1px solid var(--second-color);
+  padding: 0.3rem;
+}
+
+.listing .desc {
+  font-size: 0.8rem;
+}
+
+.listing-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.listing-container .listing-item {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.listing-item .image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0.5rem 0.5rem 60% 0.5rem;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.listing-item button {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.1rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px black;
+}
+
+.listing-item .info {
+  margin-top: 0.5rem;
+}
+
+.listing-item i {
+  font-size: 1.2rem;
+}
+
+.review i {
+  color: var(--accent-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .listing-container {
+    display: block;
+  }
+}

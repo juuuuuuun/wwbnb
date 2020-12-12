@@ -1,0 +1,126 @@
+.search-form {
+  margin-top: 1rem;
+  display: flex;
+  background-color: var(--main-color);
+  padding: 0.5rem;
+  padding-left: 2rem;
+  border-radius: 3rem;
+  width: 900px;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.search-form .input-container:not(:first-child) {
+  border-left: 1px solid var(--second-color);
+  padding-left: 1rem;
+}
+
+.search-form .input-container {
+  flex-direction: column;
+  flex: 1;
+}
+
+.search-form .input-container label {
+  font-weight: 800;
+  font-size: 0.8rem;
+  color: var(--reverse-color);
+}
+
+.search-form .input-container input {
+  border: 0;
+  outline: none;
+}
+
+.datetime input {
+  width: 95%;
+  color: var(--second-color);
+}
+
+.guestList {
+  display: flex;
+}
+
+.guestList input {
+  width: 50%;
+}
+
+.guestList select {
+  border-radius: 1rem;
+  opacity: 70%;
+}
+
+.search-form button {
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  border: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.search-form button:hover {
+  background-color: var(--main-color);
+  padding: 0.5rem;
+  color: var(--accent-color);
+  border-radius: 50%;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .search-form {
+    display: block;
+    width: 80%;
+    border-radius: 1rem;
+    padding-left: 0.5rem;
+  }
+  .search-form .input-container {
+    padding: 0 0.5rem 0.3rem 0.5rem;
+  }
+
+  .input-container:first-child {
+    display: flex;
+    padding-left: 16px;
+  }
+
+  .input-container:first-child > label {
+    padding-bottom: 0.3rem;
+  }
+
+  .search-form .input-container:not(:first-child) {
+    border-left: 0;
+  }
+
+  .search-form button {
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 1rem;
+  }
+
+  .checkOut input {
+    width: 100%;
+  }
+
+  form .checkOut,
+  form .checkIn {
+    width: 100%;
+  }
+
+  .search-form button:hover {
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 1rem;
+  }
+
+  .guestList {
+    justify-content: space-between;
+  }
+
+  .guestList input {
+    width: 80%;
+  }
+
+  .info_section > div.desc {
+    display: block;
+  }
+}
