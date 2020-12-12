@@ -14,7 +14,9 @@ const createRoom = (room) => {
 }
 
 const roomService = {
-    createRoom
+    createRoom,
+    getRoom,
+    getRooms
 };
   
 module.exports = roomService;
