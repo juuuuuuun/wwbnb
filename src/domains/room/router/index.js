@@ -7,7 +7,7 @@ router.get('/', roomController.getRooms);
 
 router.post('/', roomController.createRoom);
 
-router.get('/:id', roomController.getRoom);
+router.get('/detail/:id', roomController.getRoom);
 
 
 
