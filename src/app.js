@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, './public')));
 middlewares(app);
 
 app.use('/', homeRouter);
-app.use('/rooms', roomRouter);
+app.use('/room', roomRouter);
 app.use(errorController);
 
 module.exports = app;
