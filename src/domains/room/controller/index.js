@@ -8,9 +8,9 @@ const getRooms = wrapTryCatch(async (req, res) => {
 
 const getRoom = wrapTryCatch(async (req, res) => {
   const { id } = req.params;
-  const room = await roomService.getRoom(id);
+  // const room = await roomService.getRoom(id);
   // res.sendFile(path.join(__dirname, `views/roomDetail${id}.html`));
-  res.render(`roomDetail${id}`, { room, layout: false });
+  res.render(`roomDetail${id}`, { layout: false });
 });
 
 
